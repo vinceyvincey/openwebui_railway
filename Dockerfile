@@ -1,5 +1,4 @@
 FROM ghcr.io/open-webui/open-webui:main
-VOLUME /app/backend/data
 EXPOSE 3000:8080
 ENV WEBUI_AUTH=True
 ENV DATA_DIR=/app/backend/data
