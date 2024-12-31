@@ -1,10 +1,5 @@
 FROM ghcr.io/open-webui/open-webui:main
 EXPOSE 3000:8080
 ENV WEBUI_AUTH=True
-ENV DATA_DIR=/app/backend/data
+ENV DATA_DIR=./data
 ENV PORT=8080
-ENV CORS_ALLOW_ORIGIN=https://appealing-exploration-production.up.railway.app
-ENV USER_AGENT="open-webui-railway"
-ENV HOST=0.0.0.0
-ENV WEBUI_SECRET_KEY=/app/backend/data/.webui_secret_key
-ENV WEBUI_DB_PATH=/app/backend/data/database.sqlite
