@@ -1,3 +1,6 @@
 FROM ghcr.io/open-webui/open-webui:main
-EXPOSE 3000:8080
 
+COPY backend/start.sh /app/start.sh
+WORKDIR /app
+
+CMD ["bash", "start.sh"]
